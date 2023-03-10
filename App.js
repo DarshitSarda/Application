@@ -9,6 +9,11 @@ import React from 'react';
 import Darshit from './Darshit';
 import Location from './Maps';
 import Maps from './Maps'
+import LoginPage from './LoginPage';
+import SignUp from './SignUp';
+import LottieScreen from './LottieScreen';
+import SplashScreen from './SplashScreen';
+import RecipeCard from './RecipeCard';
 import {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -23,10 +28,12 @@ import {
 
 const App = () => {
   return (
-    // <SafeAreaView>
-    //   <Text style={styles.aradhya}>Aradhya randi</Text>
-    // </SafeAreaView>
-        <Maps/>
+    // <RecipeCard
+    //     title="Recipe Title"
+    //     description="This is a description of the recipe."
+    //     image="https://imgs.xkcd.com/comics/online_communities.png"
+    //   />
+    <SplashScreen/>
   );
   }
 

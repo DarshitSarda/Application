@@ -28,7 +28,7 @@ const Location = () => {
                     return (
                         <Marker
                             coordinate={val.coords}
-
+                            key={val.id}
                         />
                     )
                 })}
