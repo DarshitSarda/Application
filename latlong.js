@@ -72,5 +72,25 @@ export const data = [
             longitudeDelta: 0.0421,
         },
     },
+    {
+        id: 9,
+
+        coords: {
+            latitude :19.1767881559184, 
+            longitude: 72.87866546827348,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+        },
+    },
+    {
+        id: 10,
+
+        coords: {
+            latitude :19.18476, 
+            longitude: 72.83317,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+        },
+    },
     
 ]
