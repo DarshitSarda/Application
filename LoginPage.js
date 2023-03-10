@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import LottieView from 'lottie-react-native';
+import { useNavigation } from "@react-navigation/native";
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -8,10 +9,15 @@ const LoginPage = () => {
   const [showAnimation, setShowAnimation] = useState(false);
   const [error, setError] = useState(null);
 
+  const navigation = useNavigation(); 
+
   const handleLogin = () => {
     if (username !== 'foodapp' || password !== '123456') {
       setError('Invalid username or password');
       return;
+    }
+    else {
+      navigation.navigate("Generator");
     }
     // You can add your login logic here
     // For this example, we're just going to show a Lottie animation

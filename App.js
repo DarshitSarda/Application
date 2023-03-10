@@ -15,6 +15,8 @@ import LottieScreen from './LottieScreen';
 import SplashScreen from './SplashScreen';
 import RecipeCard from './RecipeCard';
 import {PropsWithChildren} from 'react';
+import Random from './Random';
+import StackNavigation from './StackNavigation';
 import {
   SafeAreaView,
   ScrollView,
@@ -33,7 +35,7 @@ const App = () => {
     //     description="This is a description of the recipe."
     //     image="https://imgs.xkcd.com/comics/online_communities.png"
     //   />
-    <SplashScreen/>
+    <StackNavigation/>
   );
   }
 
