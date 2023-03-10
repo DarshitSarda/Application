@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button} from 'react-native';
 import Splash from './Splash';
+import { useNavigation } from "@react-navigation/native";
 
 const SplashScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  const navigation = useNavigation();
+const onHomePressed = () =>{
+    navigation.navigate("Login");
+}
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,6 +24,11 @@ const SplashScreen = () => {
   return (
     <View>
       <Text>Welcome to my app!</Text>
+      <Button
+    title="Go to login page"
+    onPress={onHomePressed}
+      
+      />
     </View>
   );
 };
