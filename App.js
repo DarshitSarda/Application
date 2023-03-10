@@ -6,6 +6,9 @@
  */
 
 import React from 'react';
+import Darshit from './Darshit';
+import Location from './Maps';
+import Maps from './Maps'
 import {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -20,9 +23,10 @@ import {
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <Text style={styles.aradhya}>Aradhya randi</Text>
-    </SafeAreaView>
+    // <SafeAreaView>
+    //   <Text style={styles.aradhya}>Aradhya randi</Text>
+    // </SafeAreaView>
+        <Maps/>
   );
   }
 
