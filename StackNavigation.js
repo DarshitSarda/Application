@@ -6,6 +6,7 @@ import SplashScreen from './SplashScreen';
 import LoginPage from './LoginPage';
 import SignUp from './SignUp';
 import Random from './Random';
+import OnboardingScreen from './Onboarding';
 
 
 const StackNavigation = () => {
@@ -13,7 +14,9 @@ const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions={{headerShown:false}}>
+        <Stack.Screen name="First" component={OnboardingScreen} />
         <Stack.Screen name="Home" component={SplashScreen} />
         <Stack.Screen name="Login" component={LoginPage} />
         <Stack.Screen name="SignUpPage" component={SignUp} />
